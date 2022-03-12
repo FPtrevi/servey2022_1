@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 메인페이지 -->
+    <div id="mainPage">
+        <div class="all">
+            <div class="main">
+                <div class="pointer1" id="main_one" onclick="mainToOne()"><p class="gogo">1등</p></div>
+                <div class="pointer2" id="main_two" onclick="mainToTwo()"><p class="gogo">2등</p></div>
+                <div class="pointer3" id="main_three" onclick="mainToThree()"><p class="gogo">3등</p></div>
+                <div class="ccc">2022 DEU CCC</div>
+                <div class="newDay">새학기 설문지 이벤트 ~!</div>
+                <div class="main-flex">
+                    <div class="main-dish">
+                        <p style="font-size: 30px;">1등</p>
+                        <img src="./chickin.png" alt="" width="100%">
+                        황금 올리브 치킨 기프티콘<br>(3명)
+                    </div>
+                    <div class="main-dish">
+                        <p style="font-size: 30px;">2등</p>
+                        <img src="./bingsu.png" alt="" width="100%">
+                        설빙 기프티콘<br>(4명)
+                    </div>
+                    <div class="main-dish">
+                        <p style="font-size: 30px;">3등</p>
+                        <img src="./coffee.png" alt="" width="100%">
+                        스타벅스 아메리카노 기프티콘<br>(6명)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- 1등페이지 -->
+    <div id="firstPage" class="hidden">
+        <div class="all">
+            <div class="main">
+                <div class="pointer1" id="one_one" onclick="oneToMain()"><p class="gogo">1등</p></div>
+                <div class="pointer2" id="one_two" onclick="oneToTwo()"><p class="gogo">2등</p></div>
+                <div class="pointer3" id="one_three" onclick="oneToThree()"><p class="gogo">3등</p></div>
+                <div class="ccc">2022 DEU CCC</div>
+                <div class="newDay">새학기 설문지 이벤트 ~!  <span style="color: gold;">[1등]</span></div>
+                <div class="main-flex">
+                    <div class="devideOne">
+                        <div><p style="font-size: 40px;">황금 올리브 치킨</p></div><br>
+                        <img src="./chickin.png" alt="" width="100%" class="pic">
+                    </div>
+                    <div class="devideThree">
+                        <form id = "one">
+                            <input type="submit" value= "당첨자 확인하기" />
+                        </form>
+                        <div class="oneOf">
+                            <div id="one_1" class="oneOfBox">1</div>
+                            <div id="one_2" class="oneOfBox">2</div>
+                            <div id="one_3" class="oneOfBox">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 2등페이지 -->
+    <div id="secPage" class="hidden">
+        <div class="all">
+            <div class="main">
+                <div class="pointer1" id="two_one" onclick="twoToOne()"><p class="gogo">1등</p></div>
+                <div class="pointer2" id="two_two" onclick="twoToMain()"><p class="gogo">2등</p></div>
+                <div class="pointer3" id="twp_three" onclick="twoToThree()"><p class="gogo">3등</p></div>
+                <div class="ccc">2022 DEU CCC</div>
+                <div class="newDay">새학기 설문지 이벤트 ~!  <span style="color: gold;">[2등]</span></div>
+                <div class="main-flex">
+                    <div class="devideOne">
+                        <div><p style="font-size: 40px;">설빙 기프티콘</p></div><br>
+                        <img src="./bingsu.png" alt="" width="100%" class="pic">
+                    </div>
+                    <div class="devideThree">
+                        <form id = "two">
+                            <input type="submit" value= "당첨자 확인하기" />
+                        </form>
+                        <div class="oneOf">
+                            <div id="two_1" class="twoOfBox">1</div>
+                            <div id="two_2" class="twoOfBox">2</div>
+                            <div id="two_3" class="twoOfBox">3</div>
+                            <div id="two_4" class="twoOfBox">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 3등페이지 -->
+    <div id="thredPage" class="hidden">
+        <div class="all">
+            <div class="main">
+                <div class="pointer1" id="three_one" onclick="threeToOne()"><p class="gogo">1등</p></div>
+                <div class="pointer2" id="three_two" onclick="threeToTwo()"><p class="gogo">2등</p></div>
+                <div class="pointer3" id="three_three" onclick="threeToMain()"><p class="gogo">3등</p></div>
+                <div class="ccc">2022 DEU CCC</div>
+                <div class="newDay">새학기 설문지 이벤트 ~!  <span style="color: gold;">[3등]</span></div>
+                <div class="main-flex">
+                    <div class="devideOne">
+                        <div><p style="font-size: 40px;">스타벅스 아메리카노</p></div><br>
+                        <img src="./coffee.png" alt="" width="100%" class="pic">
+                    </div>
+                    <div class="devideThree">
+                        <form id = "three">
+                            <input type="submit" value= "당첨자 확인하기" />
+                        </form>
+                        <div class="threeOf">
+                            <div id="three_1" class="threeOfBox">1</div>
+                            <div id="three_2" class="threeOfBox">2</div>
+                            <div id="three_3" class="threeOfBox">3</div>
+                            <div id="three_4" class="threeOfBox">3</div>
+                            <div id="three_5" class="threeOfBox">3</div>
+                            <div id="three_6" class="threeOfBox">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./ran.js"></script>
+</body>
+</html>
