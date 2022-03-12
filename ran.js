@@ -1,99 +1,78 @@
 const list = [
     {
-        id: "조*채"   ,
-        university :  "부산여대"   ,
-        department : "호텔외식조리학과"
+        id: "박민영"   ,
+        university :  "동의대학교"   ,
+        department : "치위생학과"
     },
     {
-        id: "백*서"   ,
-        university :  "부산여대"   ,
-        department : "호텔외식조리학과"
+        id: "신은수"   ,
+        university :  "동의대학교"   ,
+        department : "회계학과"
     },
     {
-        id: "최*연"   ,
-        university :  "부산여대"   ,
+        id: "임하연"   ,
+        university :  "동의대학교"   ,
+        department : "유통물류학"
+    },
+    {
+        id: "김예림"   ,
+        university :  "동의대학교"   ,
         department : "사회복지학과"
     },
     {
-        id: "박*연"   ,
-        university :  "동의과학대"   ,
-        department : "응급구조과"
+        id: "정수빈"   ,
+        university :  "동의대학교"   ,
+        department : "국어국문학과"
     },
     {
-        id: "박*진"   ,
-        university :  "동의대"   ,
-        department : "보육가정상담학과"
+        id: "김태용"   ,
+        university :  "동의대학교"   ,
+        department : "산업융합시스템공학"
     },
     {
-        id: "박*은"   ,
-        university :  "동의과학대"   ,
+        id: "김지선"   ,
+        university :  "동의대학교"   ,
+        department : "신문방송학과"
+    },
+    {
+        id: "김온유"   ,
+        university :  "부산여대"   ,
         department : "간호학과"
     },
     {
-        id: "김*은"   ,
-        university :  "동의대"   ,
-        department : "국제관광경영학과"
+        id: "김태경"   ,
+        university :  "동의대학교"   ,
+        department : "스마트호스피탈리티학과"
     },
     {
-        id: "이*민"   ,
-        university :  "동의대"   ,
-        department : "보육가정상담학과"
+        id: "정채린"   ,
+        university :  "동의대학교"   ,
+        department : "식품영양학과"
     },
     {
-        id: "박*지"   ,
-        university :  "동의과학대"   ,
-        department : "방사선과"
+        id: "이지민"   ,
+        university :  "동의대학교"   ,
+        department : "바이오응용공학부"
     },
     {
-        id: "손*일"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
+        id: "정은지"   ,
+        university :  "부산여대"   ,
+        department : "간호학과"
     },
     {
-        id: "손*이"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
+        id: "문지혜"   ,
+        university :  "동의대학교"   ,
+        department : "금융보험학과"
     },
     {
-        id: "손*삼"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
+        id: "신재찬"   ,
+        university :  "동의대학교"   ,
+        department : "화학환경공학부"
     },
-    {
-        id: "손*사"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
-    },
-    {
-        id: "손*오"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
-    },
-    {
-        id: "손*육"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
-    },
-    {
-        id: "손*칠"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
-    },
-    {
-        id: "손*팔"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
-    },
-    {
-        id: "손*구"   ,
-        university :  "동의과학대"   ,
-        department : "공간정보지적과"
-    },
+    
 ]
 
 
-
-const rank = [0,1,2,3,4,5,6,7,8,9];
 rand = 0
 num = 0
 names = ""
@@ -111,7 +90,7 @@ function go_random(){
 
     console.log(list[rand].id);
 
-    list.splice(list.indexOf(rand),1);
+    list.splice(rand, 1);
 }
 
 
