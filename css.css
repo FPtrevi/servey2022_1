@@ -68,7 +68,7 @@ body{
     background-color: #F7E5E3;
     font-family: 'LeferiPoint-BlackA';
     color: #3F9E92;
-    border: 5px solid #B4A397;
+    
 }
 
 
@@ -167,16 +167,14 @@ body{
     padding-left: 60px;
 }
 
-.pic{
-    border: 5px solid #B4A397;
-}
+
 
 input[type = submit]:hover{
-    background-color: #b46f6d;
+    background-color: #bdebee;
 }
 
 input[type = submit]{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 5px solid #B4A397;
     color: #3F9E92;
     padding: 13px 100px;
