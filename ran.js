@@ -73,27 +73,54 @@ const list = [
 ]
 
 
+// rand = 0
+// num = 0
+// names = ""
+// universitys = ""
+// departments = ""
+
+
+// function go_random(){
+//     let a = list.length;
+//     rand = Math.floor(Math.random()*a);
+
+//     names = list[rand].id;
+//     universitys = list[rand].university;
+//     departments = list[rand].department;
+
+//     console.log(list[rand].id);
+
+//     list.splice(rand, 1);
+// }
+
+// 
+
+const rank = [];
+for(let i=0; i<list.length; i++){
+    rank.push(i);
+}
+
 rand = 0
 num = 0
 names = ""
 universitys = ""
 departments = ""
 
-
 function go_random(){
-    let a = list.length;
+    let a = rank.length;
     rand = Math.floor(Math.random()*a);
+    num = rank[rand];
 
-    names = list[rand].id;
-    universitys = list[rand].university;
-    departments = list[rand].department;
-
-    console.log(list[rand].id);
-
-    list.splice(rand, 1);
+    names = list[num].id;
+    universitys = list[num].university;
+    departments = list[num].department;
+    console.log(list[num].id);
+    console.log(num);
+    rank.splice(rank.indexOf(num),1);
 }
 
 
+// 
 
 
 const ones = document.querySelector("#one");
@@ -184,7 +211,7 @@ function three_event(event){
         tsts5.value=true
     }else{
         clearInterval(past3_6);
-        tsts4.innerText = `${names}\n${universitys}\n${departments}`;
+        tsts6.innerText = `${names}\n${universitys}\n${departments}`;
     }
 }
 
